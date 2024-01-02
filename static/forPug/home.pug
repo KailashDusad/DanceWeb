@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+  script(src='../static/script.js')
+
+block style
+    style 
+        include ../home.css
+
+block body 
+    
+
+    section#introSection 
+        h1 Welcome to Our Dance classes
+        div#small Eat Sleep Dance Repeat
+    
+    section#ourMission 
+        h1 
+            | Our mission
+        div#AllDiv
+            div#firstDiv.ourMissionDiv
+                div 
+                    h4 Dance Perfection
+                    img(src="../static/Card1Dance.png", alt="")
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptatibus?
+            div#secondDiv.ourMissionDiv
+                div 
+                    h4 Dance the way you Like
+                    img(src="../static/logoDance.png", alt="")
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptatibus?
+            div#thirdDiv.ourMissionDiv
+                div 
+                    h4 Teaching Expert
+                    img(src="../static/Card3Dance.png", alt="")
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptatibus?
+
+
+    section#sponserSection 
+        h2 Our Sponsers
+        div#image  #[img(src="../static/insta.png", alt="Instagram")]
+            | #[img(src="../static/Google.png", alt="Google")]
+            | #[img(src="../static/apple.png", alt="Apple")]
+            | #[img(src="../static/LinkedIn.png", alt="LinkedIn")]
+            | #[img(src="../static/youtube.png", alt="Youtube")]
+
+    

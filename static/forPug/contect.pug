@@ -1,0 +1,28 @@
+extends base.pug
+
+block scripts
+  script(src='../static/script.js')
+
+block style
+    style 
+        include ../contect.css
+
+block body 
+    section#ContectSection 
+        h2 Contect Us 
+        div#contectForm
+            form#form(action="/contect" method='post')
+                div.formDiv Name:
+                    input#name(type="text", name="name" placeholder='Name')
+                div.formDiv Phone Number:
+                    input#Phone-Number(type="text", name="Phone Number" placeholder='+91 0000000000') 
+                div.formDiv Adhar Card Number:
+                    input#Adhar-Number(type="text", name="Adhar Number" placeholder='2160 2974 6869')
+                div.formDiv Date of Birth:
+                    input#DOB(type="date", name="DOB" placeholder='Day/Month/Year')
+                div.formDiv Gender:
+                    input#gender(type="radio", name="gender" placeholder='Male' value='Male')
+                    | Male
+                    input#gender(type="radio", name="gender" placeholder='FeMale' value='FeMale')
+                    | Female
+                button#btn Submit
